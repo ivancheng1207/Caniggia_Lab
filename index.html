@@ -1,9 +1,89 @@
+<style>
+    .SUBSCRIBE-BUTTON {
+        background-color: rgb(240, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        margin-bottom: 10px;
+    }
+    
+    .SUBSCRIBE-BUTTON:hover {
+        opacity: 0.8;
+    }
+    
+    .SUBSCRIBE-BUTTON:active {
+        opacity: 0.5;
+    }
+    
+    .JOIN-BUTTON { 
+        background-color: white;
+        border-color: rgb(6, 95, 212);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(6, 95, 212);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: background-color 0.15s, color 0.15s;
+        margin-bottom: 10px;
+    }
+    
+    .JOIN-BUTTON:hover {
+        background-color: rgb(6, 95, 212);
+        color: white;
+    }
+    
+    .JOIN-BUTTON:active {
+        opacity: 0.7;
+    }
+    
+    .TWEET-BUTTON {
+        background-color: rgb(63, 136, 222);
+        color: white;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        height: 36px;
+        width: 74px;
+        margin-left: 15px;
+        transition: box-shadow 0.15s;
+        margin-bottom: 10px;
+    }
+    
+    .TWEET-BUTTON:hover {    
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    
+    }
+    
+    .side-note {
+        font-style: italic;
+        font-family: monospace;
+    }
+
+
+    
+</style>
+
+
 <h1>Welcome to the Caniggia Lab! <br></h1>
-</h1>
-<p>Side note from the web developer: <br>
-    Hi everyone, welcome to my webpage. My name is Ivan, and I am a master student <br>
-    in the Caniggia Lab. I am currently learning website development from stratch (html/css). <br>
-    What you will see here is going to be my learning journey towards creating our actual Lab web page</p>
-<p>For now, please click the button below to learn more about our Principal Investigator</p>
+
+<h2> Click any of the buttons below to learn about our Principal Investigator!</h2>
+
 <a href="https://www.lunenfeld.ca/researchers/caniggia/" target="_blank">
-    <button>About us</button></a>
+<button class="SUBSCRIBE-BUTTON"> SUBSCRIBE </button> <br>
+<button class="JOIN-BUTTON"> JOIN </button> <br>
+<button class="TWEET-BUTTON"> Tweet </button> <br>
+</a>
+
+<p class="side-note">Side note from the web developer: <br>
+    Hi everyone, welcome to my Webpage. My name is Ivan, and I am a master student <br>
+    here in the Caniggia Lab. I am currently learning website development and coding from stratch. <br>
+    What you will see here is going to be my learning journey towards creating our actual Lab web page!</p>
