@@ -79,6 +79,30 @@ left: 150px;
     left: 150px;
 }   
 
+#peter_park {
+    font-family: "Open Sans",sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 300px; 
+    left: 150px;
+}
+
+#publications {
+    font-family: "Open Sans",sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 300px; 
+    left: 150px;
+}
+
+#contacts {
+    font-family: "Open Sans",sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 300px; 
+    left: 150px;  
+}
+
 body {
 background-image: url(https://cal-laboratories.com/wp-content/uploads/2019/07/Cal-homepage-grad2.jpg);
 background-repeat: no-repeat;
