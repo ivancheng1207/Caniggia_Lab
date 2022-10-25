@@ -1,171 +1,204 @@
-* {
-margin: 0;
+*
+{
 padding:0;
+margin:0;
+box-sizing: border-box;
 }
 
-#LTRI {
-position: absolute;
-left: 10px;
-top: 10px;
-}   
+body 
+{
 
-#welcome {
-font-family: "Open Sans",sans-serif;
-font-size: 50px;
-position: absolute;
-top: 300px; 
-left: 150px;
+font-family: "Open Sans", sans-serif;
+
 }
 
-#about {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-    }
-
-#isabella_caniggia {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-    }
-
-#sruthi_alahari {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-    }
-#jonathan_ausman {   
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;}
-
-#nicole_liu {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
+.menu_bar 
+{
+background-color: #782f40;
+text-align: center;
 }
 
-#julien_sallais {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-}
-
-#ivan_cheng {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-}
-
-#frederik_nguyen{
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-}   
-
-#peter_park {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-}
-
-#publications {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;
-}
-
-#contacts {
-    font-family: "Open Sans",sans-serif;
-    font-size: 50px;
-    position: absolute;
-    top: 300px; 
-    left: 150px;  
-}
-
-body {
-background-image: url(https://cal-laboratories.com/wp-content/uploads/2019/07/Cal-homepage-grad2.jpg);
-background-repeat: no-repeat;
-background-position: 0px 100px;
-}
-
-
-nav {
-width: 100%;
-height: 72px;
-position: relative;
-top: 90px;
-background-color: #002a5c;
-}
-
-nav p {
-font-family: "Open Sans",sans-serif;
-color: white;
-font-size: 20px;
-line-height: 73px;
-float: left;
-padding: 0px 50px;
-}
-
-nav ul {
-float: left;
-}
-
-nav ul li {
-float:left;
+.menu_bar ul
+{
+display: inline-flex;
 list-style: none;
-position: relative;
+color: whitesmoke;
 }
 
-nav ul li a {
-    font-family: "Open Sans",sans-serif;
-    color: white;
-    font-size: 20px;
-    padding:22px 30px;
-    display: block;
-    text-decoration: none;
+.menu_bar ul li
+{
+width: 240px;
+margin: 5px;
+padding: 15px;
 }
 
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #002a5c;
-    padding: 2px;
-    border-radius: 0px 0px 4px 4px;
+.menu_bar ul li a
+{
+text-decoration: none;
+color: whitesmoke;
 }
 
-nav ul li:hover ul {
-    display: block;
+.menu_bar ul li:hover
+{
+background-color: #793e4c;
+border-radius: 3px;
+z-index:1;
 }
 
-nav ul li ul li {
-width: 200px;
+.menu_bar .fa
+{
+margin-right: 8px;
 }
 
-nav ul li ul a {
-padding: 8px 14px;
+.submenu-ABOUT
+{
+display:none;
 }
 
-nav ul li ul a:hover {
-    opacity: 0.5;
-    }
+.menu_bar ul li:hover .submenu-ABOUT
+{
+display:block;
+position: absolute;
+background-color: #782f40;
+margin-top: 15px;
+margin-left: -15px;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul
+{
+display:block;
+margin: 10px;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li
+{
+width: 150;
+padding: 10px;
+border-bottom: 1px dotted whitesmoke;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li:last-child
+{
+border-bottom: none;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li a:hover
+{
+opacity: 70%;
+}
+
+.submenu-PEOPLE
+{
+display:none;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE
+{
+display:block;
+position: absolute;
+background-color: #782f40;
+margin-top: 15px;
+margin-left: -15px;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul
+{
+display:block;
+margin: 10px;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li
+{
+width: 150;
+padding: 10px;
+border-bottom: 1px dotted whitesmoke;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li:last-child
+{
+border-bottom: none;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li a:hover
+{
+opacity: 70%;
+}
+
+.fa-angle-right
+{
+float: right;
+}
+
+.submenu-RESEARCHFOCUS
+{
+display:none
+}
+
+.submenu-ABOUT-RESEARCHFOCUS:hover .submenu-RESEARCHFOCUS
+{
+position: absolute;
+display: block;
+margin-top: -35px;
+margin-left: 230px;
+background-color: #782f40;
+}
+
+
+
+
+
+
+h1 {
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+  font-family: 'Lato';
+
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-family: 'Lato';
+
+}
+
+.header {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+  background-image: url(https://www.sinaihealth.ca/wp-content/uploads/2022/03/gingras-serology-800x375-1.png);
+  background-position: 0% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Lato';
+  opacity: 70%;
+  z-index: index -5
+}
+
+
+.btn-bgstroke {
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30px; 
+  font-family: 'Lato'
+}
+
+.btn-bgstroke:hover {
+  background-color: black;
+  color: white;
+  font-family: 'Lato'
+}
