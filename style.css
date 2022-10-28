@@ -1,0 +1,234 @@
+*
+{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+body 
+{
+
+font-family: "Open Sans", sans-serif;
+
+}
+
+.menu_bar 
+{
+background-color: #ffffff;
+text-align: center;
+}
+
+
+.menu_bar ul
+{
+display:inline-flex;
+list-style: none;
+color: black;
+font-size: 12px;
+
+}
+
+
+
+
+.menu_bar ul li
+{
+width: 150px;
+margin: 1px;
+padding: 15px;
+
+}
+
+.menu_bar ul li a
+{
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+
+.menu_bar ul li a:hover
+{
+text-decoration: none;
+color: rgb(0, 192, 235);
+}
+
+
+
+.menu_bar ul li:hover
+{
+background-color: white;
+border-radius: 3px;
+z-index:1;
+
+}
+
+.menu_bar .fa
+{
+margin-right: 5px;
+}
+
+.submenu-ABOUT
+{
+display:none;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT
+{
+display:block;
+position: absolute;
+background-color: white;
+margin-top: 15px;
+margin-left: 15px;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul
+{
+display:block;
+margin: 10px;
+margin-right: 20px;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li
+{
+width: 180;
+padding: 10px;
+
+border-bottom: 1px dotted black;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li .submenu-RESEARCHFOCUS
+{
+margin-left: 130px;
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li:last-child
+{
+border-bottom: none;
+
+
+}
+
+.menu_bar ul li:hover .submenu-ABOUT ul li a:hover
+{
+opacity: 70%;
+color: rgb(0, 192, 235);
+
+}
+
+
+.submenu-PEOPLE
+{
+display:none;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE
+{
+display:block;
+position: absolute;
+background-color: white;
+margin-top: 15px;
+margin-left: 15px;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul
+{
+display:block;
+margin: 10px;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li
+{
+width: 150;
+padding: 10px;
+border-bottom: 1px dotted black;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li:last-child
+{
+border-bottom: none;
+}
+
+.menu_bar ul li:hover .submenu-PEOPLE ul li a:hover
+{
+opacity: 70%;
+color: rgb(0, 192, 235);
+}
+
+.fa-angle-right
+{
+float: right;
+}
+
+.submenu-RESEARCHFOCUS
+{
+display:none
+}
+
+.submenu-ABOUT-RESEARCHFOCUS:hover .submenu-RESEARCHFOCUS
+{
+position: absolute;
+display: block;
+margin-top: -35px;
+margin-left: 230px;
+background-color: #ffffff;
+}
+
+
+
+
+
+
+h1 {
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+  font-family: 'Lato';
+    
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-family: 'Lato';
+
+}
+
+.header {
+  width: 100%;
+  padding:200px;
+  text-align: center;
+  background-image: url(https://static.scientificamerican.com/sciam/cache/file/F6A9B980-A253-44A1-81CB92D5496FCFB2_source.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-family: 'Lato';
+
+  z-index: index -5
+}
+
+
+.btn-bgstroke {
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30px; 
+  font-family: 'Lato'
+}
+
+.btn-bgstroke:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Lato'
+}
+
