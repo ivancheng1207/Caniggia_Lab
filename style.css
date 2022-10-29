@@ -89,7 +89,7 @@ margin-right: 20px;
 
 .menu_bar ul li:hover .submenu-ABOUT ul li
 {
-width: 200px;
+width: 180;
 padding: 10px;
 
 border-bottom: 1px dotted black;
@@ -142,7 +142,7 @@ margin: 10px;
 
 .menu_bar ul li:hover .submenu-PEOPLE ul li
 {
-width: 300px;
+width: 200px;
 padding: 10px;
 border-bottom: 1px dotted black;
 background: transparent;
