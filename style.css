@@ -234,3 +234,12 @@ p {
   font-family: 'Lato'
 }
 
+.image_credit
+{
+font-size: 10px;
+font-family: "Lato";
+color: white;
+position: absolute;
+margin-top: -15px;
+margin-left:5px;
+}
