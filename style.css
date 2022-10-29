@@ -4,53 +4,74 @@ padding:0;
 margin:0;
 box-sizing: border-box;
 }
+
 body 
 {
+
 font-family: "Open Sans", sans-serif;
+
 }
-.menu_bar 
+
+.menu-bar 
 {
 background-color: #ffffff;
 text-align: center;
 }
-.menu_bar ul
+
+
+.menu-bar ul
 {
 display:inline-flex;
 list-style: none;
 color: black;
 font-size: 12px;
+
 }
-.menu_bar ul li
+
+
+
+
+.menu-bar ul li
 {
 width: 150px;
 margin: 1px;
 padding: 15px;
+
 }
-.menu_bar ul li a
+
+.menu-bar ul li a
 {
 text-decoration: none;
 color: rgb(0, 0, 0);
 }
-.menu_bar ul li a:hover
+
+.menu-bar ul li a:hover
 {
 text-decoration: none;
 color: rgb(0, 192, 235);
 }
-.menu_bar ul li:hover
+
+
+
+.menu-bar ul li:hover
 {
 background-color: white;
 border-radius: 3px;
 z-index:1;
+
 }
-.menu_bar .fa
+
+.menu-bar .fa
 {
 margin-right: 5px;
 }
+
 .submenu-ABOUT
 {
 display:none;
 }
-.menu_bar ul li:hover .submenu-ABOUT
+
+.menu-bar ul li:hover .submenu-ABOUT
 {
 display:block;
 position: absolute;
@@ -58,41 +79,53 @@ background-color: white;
 margin-top: 15px;
 margin-left: 15px;
 }
-.menu_bar ul li:hover .submenu-ABOUT ul
+
+.menu-bar ul li:hover .submenu-ABOUT ul
 {
 display:block;
 margin: 10px;
 margin-right: 20px;
 }
-.menu_bar ul li:hover .submenu-ABOUT ul li
+
+.menu-bar ul li:hover .submenu-ABOUT ul li
 {
-width: 180;
+width: 180px;
 padding: 10px;
+
 border-bottom: 1px dotted black;
 background: transparent;
 border-radius: 0;
 text-align: left;
 }
-.menu_bar ul li:hover .submenu-ABOUT ul li .submenu-RESEARCHFOCUS
+
+.menu-bar ul li:hover .submenu-ABOUT ul li .submenu-RESEARCHFOCUS
 {
 margin-left: 130px;
 margin-top: -40px;
 padding-top: 4px;
 }
-.menu_bar ul li:hover .submenu-ABOUT ul li:last-child
+
+.menu-bar ul li:hover .submenu-ABOUT ul li:last-child
 {
 border-bottom: none;
+
+
 }
-.menu_bar ul li:hover .submenu-ABOUT ul li a:hover
+
+.menu-bar ul li:hover .submenu-ABOUT ul li a:hover
 {
 opacity: 70%;
 color: rgb(0, 192, 235);
+
 }
+
+
 .submenu-PEOPLE
 {
 display:none;
 }
-.menu_bar ul li:hover .submenu-PEOPLE
+
+.menu-bar ul li:hover .submenu-PEOPLE
 {
 display:block;
 position: absolute;
@@ -100,12 +133,16 @@ background-color: white;
 margin-top: 15px;
 margin-left: 15px;
 }
-.menu_bar ul li:hover .submenu-PEOPLE ul
+
+.menu-bar ul li:hover .submenu-PEOPLE ul
 {
 display:block;
 margin: 10px;
+
+
 }
-.menu_bar ul li:hover .submenu-PEOPLE ul li
+
+.menu-bar ul li:hover .submenu-PEOPLE ul li
 {
 width: 200px;
 padding: 10px;
@@ -114,23 +151,28 @@ background: transparent;
 border-radius: 0;
 text-align: left;
 }
-.menu_bar ul li:hover .submenu-PEOPLE ul li:last-child
+
+.menu-bar ul li:hover .submenu-PEOPLE ul li:last-child
 {
 border-bottom: none;
 }
-.menu_bar ul li:hover .submenu-PEOPLE ul li a:hover
+
+.menu-bar ul li:hover .submenu-PEOPLE ul li a:hover
 {
 opacity: 70%;
 color: rgb(0, 192, 235);
 }
+
 .fa-angle-right
 {
 float: right;
 }
+
 .submenu-RESEARCHFOCUS
 {
 display:none
 }
+
 .submenu-ABOUT-RESEARCHFOCUS:hover .submenu-RESEARCHFOCUS
 {
 position: absolute;
@@ -139,6 +181,12 @@ margin-top: -35px;
 margin-left: 230px;
 background-color: #ffffff;
 }
+
+
+
+
+
+
 h1 {
   font-size: 2.8em;
   padding: 10px 0;
@@ -146,12 +194,15 @@ h1 {
   font-family: 'Lato';
     
 }
+
 p {
   font-size: 1.1em;
   font-weight: 100;
   letter-spacing: 5px;
   font-family: 'Lato';
+
 }
+
 .header {
   width: 100%;
   padding:200px;
@@ -162,8 +213,11 @@ p {
   background-size: cover;
   color: rgb(255, 255, 255);
   font-family: 'Lato';
+
   z-index: index -5
 }
+
+
 .btn-bgstroke {
   font-size: 20px;
   display: inline-block;
@@ -175,13 +229,15 @@ p {
   margin-top: 30px; 
   font-family: 'Lato'
 }
+
 .btn-bgstroke:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-family: 'Lato'
 }
 
-.image_credit
+
+.image-credit
 {
 font-size: 10px;
 font-family: "Lato";
@@ -189,4 +245,38 @@ color: white;
 position: absolute;
 margin-top: -15px;
 margin-left:5px;
+}
+
+.lab-status 
+{
+display: block;
+background-color: #09203d;
+padding: 15px;
+text-align: right;
+}
+
+.lab-status a 
+{
+text-decoration: none;
+color: rgb(76, 175, 80);
+font-size: 16px;
+}
+
+.lab-status .fa
+{
+margin-left: 5px;
+margin-right: 50px;
+}
+
+.preeclampsia-video
+{
+position: relative;
+padding: 50px;
+}
+
+.gestational-diabetes-video
+{
+position: relative;
+padding: 50px;
+margin-top: 10px;
 }
