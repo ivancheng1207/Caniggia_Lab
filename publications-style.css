@@ -10,7 +10,7 @@ a:hover {
 
 .publications-banner {
 width: 100%;
-height: 300px;
+height: 500px;
 background-image: url(https://gps.ucsd.edu/_images/faculty-research/banner_publications-journals.jpeg);
 background-position: center;
 background-repeat: no-repeat;
@@ -20,7 +20,7 @@ background-size: cover;
 }
 
 body{
-    background-color: #e3edf7;
+    background-color: #ffffff;
 
 }
 
