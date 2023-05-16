@@ -1,0 +1,93 @@
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 70%;
+    color: rgb(0, 192, 235);
+}
+
+.publications-banner {
+width: 100%;
+height: 300px;
+background-image: url(https://gps.ucsd.edu/_images/faculty-research/banner_publications-journals.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+body{
+    background-color: #e3edf7;
+
+}
+
+
+
+
+.accordion{
+    margin: 60px auto;
+    width: 1200px;
+    
+}
+
+.accordion li{
+
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
+                -6px -6px 10px -1px rgba(255 255, 255, 0.7);
+
+}
+
+.accordion li label{
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+label::before{
+
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+
+    display: none;
+}
+
+.accordion .content{
+
+    color: #555;
+    padding:0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+
+    content: '-';
+}
