@@ -75,21 +75,40 @@ a{
 }
 
 /* Style the dropdown menu */
-.main-menu-content ul li ul {
-  height: 10vh;
-  width: 16vw;
+.main-menu-content ul ul {
   position: absolute;
+  top: 100%;
+  width: auto;
+  height: auto;
+  margin-left: 0px;
   background-color: #fff;
   display: none;
 
 }
 
-.main-menu-content ul li:hover ul{
+.main-menu-content li:hover ul{
   display: flex;
   flex-direction: column;
-  margin-left: 0vw;
-  
 }
+
+
+.main-menu-content ul li a{
+  padding: 0 1vw;
+  font-family: 'Roboto', sans-serif;
+  line-height: 4vw;
+  color: #000;
+  display: block;
+  height: 100%;
+
+
+
+}
+
+.main-menu-content ul li a:hover{
+  color: rgb(0, 183, 229);
+}
+
+
 
 
 
