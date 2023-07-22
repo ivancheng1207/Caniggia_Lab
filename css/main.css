@@ -36,7 +36,7 @@ a{
   width: fit-content;
   height: 100%;
   display: flex;
-  padding-left: 60px;
+  padding-left: 5vw;
 }
 
 .main-menu-logo img{
