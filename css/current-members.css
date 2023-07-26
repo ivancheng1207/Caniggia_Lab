@@ -1,0 +1,526 @@
+/* The hero image */
+.current-members-banner-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Users/ivancheng/Desktop/Caniggia_Lab-main/img/team.jpg');
+
+  /* Set a specific height */
+  width: 100%;
+  height: 40vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.current-members-banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.current-members-banner-text h1{
+  font-family:'Roboto', sans-serif;
+  font-size: 4vw;
+}
+
+.current-members-banner-text p{
+  font-family:'Roboto', sans-serif;
+  font-size: 1.5vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+
+/* about IC section*/
+
+.isabella-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+}
+
+
+.isabella-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.isabella-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.isabella-about-text{
+flex-basis: 50vw;
+}
+
+.isabella-about-text h4{
+  font-size: 3vw;
+}
+
+.isabella-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.isabella-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .isabella-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .isabella-about-bio {
+  font-size: 2vw;
+}
+
+/* about Sruthi section*/
+
+.sruthi-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(0, 13, 48);
+  font-family:'Roboto', sans-serif;
+  color: white;
+}
+
+
+.sruthi-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.sruthi-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.sruthi-about-text{
+flex-basis: 50vw;
+}
+
+.sruthi-about-text h4{
+  font-size: 3vw;
+}
+
+.sruthi-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.sruthi-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .sruthi-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .sruthi-about-bio {
+  font-size: 2vw;
+}
+
+
+/* about Fred section*/
+
+.fred-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+.fred-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.fred-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.fred-about-text{
+flex-basis: 50vw;
+}
+
+.fred-about-text h4{
+  font-size: 3vw;
+}
+
+.fred-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.fred-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .fred-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .fred-about-bio {
+  font-size: 2vw;
+}
+
+
+/* about Violeta section*/
+
+.violeta-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(0, 13, 48);
+  font-family:'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+.violeta-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.violeta-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.violeta-about-text{
+flex-basis: 50vw;
+}
+
+.violeta-about-text h4{
+  font-size: 3vw;
+}
+
+.violeta-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.violeta-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .violeta-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .violeta-about-bio {
+  font-size: 2vw;
+}
+
+/* about Jon section*/
+
+.jon-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+.jon-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.jon-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.jon-about-text{
+flex-basis: 50vw;
+}
+
+.jon-about-text h4{
+  font-size: 3vw;
+}
+
+.jon-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.jon-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .jon-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .jon-about-bio {
+  font-size: 2vw;
+}
+
+/* about Julien section*/
+
+.julien-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(0, 13, 48);
+  font-family:'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+.julien-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.julien-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.julien-about-text{
+flex-basis: 50vw;
+}
+
+.julien-about-text h4{
+  font-size: 3vw;
+}
+
+.julien-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.julien-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .julien-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .julien-about-bio {
+  font-size: 2vw;
+}
+
+/* about Nicole section*/
+
+.nicole-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+.nicole-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.nicole-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.nicole-about-text{
+flex-basis: 50vw;
+}
+
+.nicole-about-text h4{
+  font-size: 3vw;
+}
+
+.nicole-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.nicole-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .nicole-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .nicole-about-bio {
+  font-size: 2vw;
+}
+
+
+/* about Ivan section*/
+
+.ivan-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(0, 13, 48);
+  font-family:'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+.ivan-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.ivan-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.ivan-about-text{
+flex-basis: 50vw;
+}
+
+.ivan-about-text h4{
+  font-size: 3vw;
+}
+
+.ivan-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.ivan-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .ivan-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .ivan-about-bio {
+  font-size: 2vw;
+}
+
+/* about Alma section*/
+
+.alma-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: white;
+  font-family:'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+.alma-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.alma-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.alma-about-text{
+flex-basis: 50vw;
+}
+
+.alma-about-text h4{
+  font-size: 3vw;
+}
+
+.alma-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.alma-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .alma-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .alma-about-bio {
+  font-size: 2vw;
+}
