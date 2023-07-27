@@ -4,17 +4,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+
+.container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://navigator.innovation.ca/sites/default/files/styles/facility_670x448_/public/2021-05/TCP-building_lightbox-resized.png?itok=a3ho_Y8C);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
-}
-
-.container {
   width: 100%;
-  height: 100vh;
+  height: 60vw;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
