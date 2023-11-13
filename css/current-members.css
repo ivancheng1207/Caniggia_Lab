@@ -110,6 +110,7 @@ body {
 }
 
 .isabella-about-text {
+  margin-top: 5vw;
   flex-basis: 50vw;
   width: 30%;
   opacity: 0;
