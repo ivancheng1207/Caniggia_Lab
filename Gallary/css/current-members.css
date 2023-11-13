@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+}
+
+.gallery {
+  width: 70vw;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1vw;
+  padding: 1vw;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+  height: 25vw;
+  width: auto;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+#backBtn,
+#nextBtn {
+  width: 4vw;
+  cursor: pointer;
+  margin: 2vw;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.current-members-banner img {
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* about IC section*/
+
+.isabella-about {
+  width: 100%;
+  padding: 4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+.isabella-about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.isabella-about-img img {
+  width: 45vw;
+}
+
+.isabella-about-text {
+  flex-basis: 50vw;
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.isabella-intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.isabella-about-text h4 {
+  font-size: 3vw;
+}
+
+.isabella-about-text p {
+  padding: 3vw 0;
+  padding-right: 6vw;
+}
+
+.isabella-about-text a {
+  font-size: 2.5vw;
+  display: block;
+  height: 5vw;
+  line-height: 5vw;
+  background-color: rgb(255, 7, 197);
+  padding: 0 2vw;
+  width: fit-content;
+}
+
+.isabella-about-text a:hover {
+  background-color: rgb(195, 70, 166);
+}
+
+.isabella-about-bio {
+  font-size: 2vw;
+}
+
+.gallery-title {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  padding-top: 4vw;
+  margin-bottom: -8vw;
+}
+
+.julien-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+}
+
+.julien-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.julien-modal-content {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
