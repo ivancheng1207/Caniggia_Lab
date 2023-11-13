@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+}
+
+.current-members-banner-text {
+  position: absolute;
+  top: 37vw;
+  left: 75vw;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.current-members-banner-text h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5.5vw;
+}
+
+.current-members-banner-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.gallery {
+  width: 70vw;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1vw;
+  padding: 1vw;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+  height: 25vw;
+  width: auto;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+#backBtn,
+#nextBtn {
+  width: 4vw;
+  cursor: pointer;
+  margin: 2vw;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.current-members-banner img {
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* about IC section*/
+
+.isabella-about {
+  width: 100%;
+  padding: 4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+.isabella-about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.isabella-about-text h4 {
+  text-align: center;
+  margin-right: 7vw;
+}
+
+.isabella-about-img img {
+  width: 45vw;
+}
+
+.isabella-about-text {
+  margin-top: 5vw;
+  flex-basis: 50vw;
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+  text-align: justify;
+}
+
+.isabella-intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.isabella-about-text h4 {
+  font-size: 3vw;
+}
+
+.isabella-about-text p {
+  padding: 3vw 0;
+  padding-right: 6vw;
+}
+
+.isabella-about-text a {
+  font-size: 2.5vw;
+  display: block;
+  height: 5vw;
+  line-height: 5vw;
+  background-color: rgb(255, 7, 197);
+  padding: 0 2vw;
+  width: fit-content;
+}
+
+.isabella-about-text a:hover {
+  background-color: rgb(195, 70, 166);
+}
+
+.isabella-about-bio {
+  font-size: 2vw;
+}
+
+.gallery-title {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  padding-top: 4vw;
+  margin-bottom: -8vw;
+}
+
+.julien-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.julien-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.julien-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.julien-modal-content h2 {
+  font-size: 3vw;
+}
+.julien-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.julien-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
+
+.nicole-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.nicole-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.nicole-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.nicole-modal-content h2 {
+  font-size: 3vw;
+}
+.nicole-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.nicole-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
+
+.fred-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.fred-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.fred-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.fred-modal-content h2 {
+  font-size: 3vw;
+}
+.fred-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.fred-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
+
+.sruthi-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.sruthi-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.sruthi-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.sruthi-modal-content h2 {
+  font-size: 3vw;
+}
+.sruthi-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.sruthi-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
+
+.mohamed-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.mohamed-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.mohamed-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.mohamed-modal-content h2 {
+  font-size: 3vw;
+}
+.mohamed-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.mohamed-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
+
+.ivan-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.ivan-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.ivan-modal-content {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: white;
+  width: 70vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.ivan-modal-content h2 {
+  font-size: 3vw;
+}
+.ivan-modal-content p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+.ivan-modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  cursor: pointer;
+}
+.icon {
+  font-size: 2vw;
+}
