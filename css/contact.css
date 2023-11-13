@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://navigator.innovation.ca/sites/default/files/styles/facility_670x448_/public/2021-05/TCP-building_lightbox-resized.png?itok=a3ho_Y8C);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .contact_data {
+  background: #fff;
+  width: 50vw;
+  border-radius: 0.5vw;
+  border-top: 0.5vw solid rgb(0, 183, 229);
+  margin: 0 1vw;
+}
+
+.container .contact_data form {
+  padding: 0 2vw;
+}
+
+.container .contact_data form input,
+textarea {
+  width: 95%;
+  margin: 0.5vw 0 0 0.5vw;
+  padding: 0.5vw 1vw;
+  border: 0.1vw solid #ddd;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.container .contact_data h2 {
+  margin-top: 2vw;
+  margin-left: 2.5vw;
+  margin-bottom: 1vw;
+  border-bottom: 0.2vw rgb(0, 183, 229) solid;
+  font-size: 1.5vw;
+  width: 20%;
+}
+
+.container .contact_data label {
+  display: block;
+  padding-top: 1vw;
+  padding-left: 0.7vw;
+  font-size: 1.2vw;
+}
+
+.container .contact_data button {
+  margin: 1vw 1vw;
+  border: none;
+  padding: 1vw 1.5vw;
+  background: rgb(0, 183, 229);
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .contact_data button:hover {
+  background: #3498db;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.container .contact_data2 {
+  background: #fff;
+  border-radius: 0.5vw;
+  border-top: 0.5vw solid rgb(0, 183, 229);
+  width: 30vw;
+  margin: 0 1vw;
+}
+
+.container .contact_data2 ul {
+  list-style: none;
+}
+
+.container .contact_data2 ul li {
+  margin: 1.5vw 1.5vw;
+}
+
+.container .contact_data2 ul li i {
+  font-size: 1.5vw;
+  color: rgb(0, 183, 229);
+}
+
+.container .contact_data2 ul li strong {
+  margin-left: 1vw;
+  font-size: 1.2vw;
+}
+
+.container .contact_data2 ul li p {
+  font-size: 1vw;
+  margin-left: 2.5vw;
+
+
+}
+
+.container .contact_data2 .map iframe {
+  width: 90%;
+  height: 20vw;
+  margin: 0 1.5vw;
+}
+
+
+

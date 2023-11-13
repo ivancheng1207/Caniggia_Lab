@@ -1,0 +1,91 @@
+/* The hero image */
+.alumni-banner-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/alumni-banner.webp');
+
+  /* Set a specific height */
+  width: 100%;
+  height: 40vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.alumni-banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.alumni-banner-text h1{
+  font-family:'Roboto', sans-serif;
+  font-size: 8vw;
+}
+
+.alumni-banner-text p{
+  font-family:'Roboto', sans-serif;
+  font-size: 3vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+
+/* about Peter section*/
+
+.peter-about {
+  width:100%;
+  padding:4vw 0;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+}
+
+
+.peter-about-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.peter-about-img img{
+width: 45vw;
+border-radius: 100vw;
+}
+
+.peter-about-text{
+flex-basis: 50vw;
+}
+
+.peter-about-text h4{
+  font-size: 3vw;
+}
+
+.peter-about-text p{
+padding: 3vw 0;
+padding-right: 6vw;
+}
+
+.peter-about-text a{
+    font-size: 2.5vw;
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    background-color: rgb(255, 7, 197);
+    padding: 0 2vw;
+    width: fit-content;
+  }
+
+  .peter-about-text a:hover {
+    background-color: rgb(195, 70, 166);;
+  }
+
+  .peter-about-bio {
+  font-size: 2vw;
+}
