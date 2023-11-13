@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/current-members.css" />
-    <script type="text/javascript" src="routes/index.js"></script>
-
-
     <title>Our Team</title>
   </head>
   <body>
@@ -47,7 +44,7 @@
     <section class = "isabella-about">
       <div class = "wrapper-main isabella-about-flex">
         <div class = "isabella-about-img">
-          <img src="/images/Isabella.png" alt = "Isabella Caniggia">
+          <img src="./images/Isabella.png" alt = "Isabella Caniggia">
         </div>
         <div class = "isabella-about-text">
           <h4>Dr. Isabella Caniggia, MD/PhD <br> (Princple Investigator)</h4>
@@ -68,8 +65,8 @@
       <img src="images/back.png" id="backBtn" />
 
       <div class="gallery">
-        <div >
-          <span><img src="images/Julien.jpg" /></span>
+        <div>
+          <span class="member-modal"><img id="Julien" src="images/Julien.jpg" /></span>
           <span><img src="images/Nicole.JPEG" /></span>
           <span><img src="images/Fred.jpg" /></span>
         </div>
@@ -83,19 +80,13 @@
       <img src="images/next.png" id="nextBtn" />
     </div>
 
-
     <div class = "julien-modal">
-
-      <div class="julien-modal-content">
+      <div class="member-modal-content">
+        <!-- <img src="images/Julien.jpg" /> -->
         <h2> Julien Sallias, PhD Canidate</h2>
         <p>Type something aobut Julien's bio here...</p>
       </div>
-
     </div>
-
-    <button class="julien-image">Hello World</button>
-
-
 
 
 
@@ -163,33 +154,32 @@
               </div>
           </footer>
 
-    <script>
-
-
-
-      let scrollContainer = document.querySelector(".gallery");
-      let backBtn = document.getElementById("backBtn");
-      let nextBtn = document.getElementById("nextBtn");
-
-      scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-        scrollContainer.style.scrollBehavior = "auto";
-      });
-
-      nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 2000;
-      });
-
-      backBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft -= 2000;
-      });
-
-      window.addEventListener("scroll", scrollAppear);
-
-    </script>
-
   </body>
+  <script type="text/javascript" src="./routes/index.js"></script>
+  <script type="text/javascript" src="./routes/bio.js"></script>
+
+  <script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+      scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 2000;
+    });
+
+    backBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= 2000;
+    });
+
+    window.addEventListener("scroll", scrollAppear);
+
+  </script>
 </html>

@@ -145,15 +145,15 @@ body {
   align-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
 }
 
-.julien-modal-active {
+.member-modal-active {
   visibility: visible;
   opacity: 1;
 }
 
-.julien-modal-content {
+.member-modal-content {
   font-family: "Roboto", sans-serif;
   background-color: white;
   width: 30%;
