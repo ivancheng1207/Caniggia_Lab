@@ -354,7 +354,7 @@ body {
   font-size: 2vw;
 }
 
-.mohamed-modal {
+.mia-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -368,11 +368,11 @@ body {
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
 }
-.mohamed-modal-active {
+.mia-modal-active {
   visibility: visible;
   opacity: 1;
 }
-.mohamed-modal-content {
+.mia-modal-content {
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: white;
@@ -384,14 +384,14 @@ body {
   flex-direction: column;
   padding: 3vw;
 }
-.mohamed-modal-content h2 {
+.mia-modal-content h2 {
   font-size: 3vw;
 }
-.mohamed-modal-content p {
+.mia-modal-content p {
   text-align: justify;
   font-size: 1.5vw;
 }
-.mohamed-modal-close {
+.mia-modal-close {
   position: absolute;
   top: 1vw;
   right: 1vw;
@@ -450,7 +450,10 @@ body {
   font-size: 2vw;
 }
 
-.mia-modal {
+
+
+
+.sachin-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -464,11 +467,11 @@ body {
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
 }
-.mia-modal-active {
+.sachin-modal-active {
   visibility: visible;
   opacity: 1;
 }
-.mia-modal-content {
+.sachin-modal-content {
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: white;
@@ -480,14 +483,14 @@ body {
   flex-direction: column;
   padding: 3vw;
 }
-.mia-modal-content h2 {
+.sachin-modal-content h2 {
   font-size: 3vw;
 }
-.mia-modal-content p {
+.sachin-modal-content p {
   text-align: justify;
   font-size: 1.5vw;
 }
-.mia-modal-close {
+.sachin-modal-close {
   position: absolute;
   top: 1vw;
   right: 1vw;
@@ -546,53 +549,6 @@ body {
   font-size: 2vw;
 }
 
-.sachin-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s;
-}
-.sachin-modal-active {
-  visibility: visible;
-  opacity: 1;
-}
-.sachin-modal-content {
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  background-color: white;
-  width: 70vw;
-  height: 25vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  padding: 3vw;
-}
-.sachin-modal-content h2 {
-  font-size: 3vw;
-}
-.sachin-modal-content p {
-  text-align: justify;
-  font-size: 1.5vw;
-}
-.sachin-modal-close {
-  position: absolute;
-  top: 1vw;
-  right: 1vw;
-
-  cursor: pointer;
-}
-.icon {
-  font-size: 2vw;
-}
 
 .violeta-modal {
   position: fixed;
